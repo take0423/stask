@@ -1,0 +1,177 @@
+body, input, p, h1, button{
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding-top: 30px;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+/* ・・・・・・・・・・・・・・・・・・・・・・・・・トップ */
+h1{ 
+    color: red;
+    text-align: center;
+}
+
+.stampL-top{
+    position: relative;
+    bottom: -5px;
+    animation:3s infinite rotation;
+}
+.stampN-top{
+    position: relative;
+    bottom: -5px;
+}
+@keyframes rotation{
+    0%{ transform:rotateY(0);}
+    100%{ transform:rotateY(360deg); }
+  }
+.top-msg{
+    margin-bottom: 10px;
+}
+.top-msg p{
+    text-align: center;
+}
+.task-group{
+    padding: 15px;
+    width: 500px;
+    margin: 0 auto;
+    border: 2px solid #000;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+/* ・・・・・・・・・・・・・・・・・・・・・・・・・追加ボタン */
+.add-btn{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 80%;
+    height: 40px;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+}
+/* ・・・・・・・・・・・・・・・・・・・・・・・・・リスト */
+.list-wrapper{
+    top: 0;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+.tasks{
+    top: 0;
+    width: 100%;
+}
+.task{
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    width: 95%;
+    background-color: #fff;
+}
+.taskflex{
+    display: flex;
+    justify-content: space-between;
+}
+.checkbox{
+    width: 40px;
+    height: 40px;
+}
+.checkbox p{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+}
+/* ・・・・・・・・・・・・・・・・・・・・・・・・・チェックリスト */
+.content-wrapper{
+    display: flex;
+    width: 420px;
+}
+.content{
+    width: 80%;
+    height: 40px;
+}
+.content input{
+    width: 100%;
+    height: 36px;
+    font-size: 2rem;
+    text-align: center;
+}
+.okBtn{
+    width: 20%;
+    height: 40px;
+    background-color: #fff;
+    font-size: 1rem;
+    text-align: center;
+}
+.okBtn:hover{
+    color: #fff;
+    background-color: rgb(255, 46, 46);
+}
+.check{
+    height: 40px;
+    width: 40px;
+}
+
+/* ・・・・・・・・・・・・・・・・・・・・・・・・・おめでとう */
+.comment{
+    position: absolute;
+    bottom: 0;
+    width: 300px;
+    height: 100px;
+    background-color: #fff;
+}
+.congratulations, .fightMsg{
+    line-height: 100px;
+    font-size: 2rem;
+    width: 300px;
+
+}
+.congratulations{
+    text-align: right;
+}
+.fightMsg{
+    text-align: center;
+}
+/* ・・・・・・・・・・・・・・・・・・・・・・・・・カウント */
+.countup{
+    display: inline-block;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+}
+.countup p{
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+.font-l{
+    font-size: 4rem;
+}
+/* ・・・・・・・・・・・・・・・・・・・・・・・・・スタンプ大 */
+.comment-wrapper{
+    margin-top: 10px;
+    position: relative;
+    background-color: rgb(45, 45, 45);
+    width: 100%;
+    height: 100px;
+}
+.stamp-box{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    border: 2px solid #000;
+}
+.stampL{
+    transform: rotate(15deg);
+}
